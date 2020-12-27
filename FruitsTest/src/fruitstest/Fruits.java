@@ -27,7 +27,12 @@ public class Fruits {
         return "Fruits{" + "price=" + price + ", quality=" + quality + '}';
     }
     public boolean equals(Fruits f){
-        return true;
+        if(f.getName()==this.name&&f.getPrice()==this.price&&f.getQuality()==this.quality){
+            return true;
+        }
+        else{
+            return false;
+        }
     }
     
     public int compare(Fruits f){
